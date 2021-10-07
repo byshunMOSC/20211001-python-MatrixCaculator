@@ -303,7 +303,6 @@ class FRA:
             return True
         else:
             return False
-
     def __lt__(self, other):
         if (self - other).symbol == '-':
             return True
@@ -315,6 +314,11 @@ class FRA:
             return True
         else:
             return False
+    def __ne__(self, other):
+        if (self - other).numerator != 0:
+            return True
+        else:
+            return False
 #重载>=、<=运算符
     def __ge__(self, other):
         mid = self - other
@@ -322,7 +326,6 @@ class FRA:
             return False
         else:
             return True
-
     def __le__(self, other):
         mid = other - self
         if mid.symbol == '-':
@@ -646,4 +649,4 @@ class MATRIX:
         if type(other) == FRA:
             return self * (1 / other)
         else:
-            return self * (1 / FRA(other))
+            return self * (1 / FRA(other)) 
