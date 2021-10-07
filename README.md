@@ -1,6 +1,6 @@
 # 20211001-python-MatrixCaculator
 python matrix National Day
-国庆线上任务测试，看看大家的积极性
+国庆线上任务测试，很新手
 
 如果能够认真完成国庆任务，至少会帮助你：
 1.安装好conda环境与pycharm。
